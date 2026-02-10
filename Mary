@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Mary ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+    --red: #ff4d6d;
+    --pink: #ffc0cb;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #fff, #ffe6ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Card */
+.card {
+    position: relative;
+    background: white;
+    width: 90%;
+    max-width: 420px;
+    min-height: 380px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(255,0,80,0.25);
+    text-align: center;
+    z-index: 10;
+}
+
+h1 {
+    color: var(--red);
+    margin-bottom: 10px;
+}
+
+.page {
+    display: none;
+    animation: fade 0.6s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+/* Buttons */
+.nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background: var(--red);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff1f4a;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to
